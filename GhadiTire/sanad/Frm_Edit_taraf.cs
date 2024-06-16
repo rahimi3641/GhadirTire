@@ -37,7 +37,7 @@ namespace GhadiTire.sanad
 
         private void Frm_Edit_taraf_Load(object sender, EventArgs e)
         {
-            txt_name_taraf.Text = UC_taraf.drv_taraf["name_taraf"] + "";
+            txt_name_taraf.Text = UC_taraf.drv_taraf["name_taraf"] .ToString();
             txt_fam_taraf.Text = UC_taraf.drv_taraf["fam_taraf"] + "";
             txt_adress.Text = UC_taraf.drv_taraf["adress"] + "";
             txt_tel_taraf.Text = UC_taraf.drv_taraf["tel_taraf"] + "";
