@@ -2,6 +2,7 @@
 using DevExpress.XtraCharts.Native;
 using DevExpress.XtraEditors;
 using GhadiTire.khoruj;
+using GhadiTire.report;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -188,6 +189,23 @@ namespace GhadiTire
                 }
                 Cs_Lib.CON_GhadirTire.Close();
             }
+        }
+
+        private void br_Report_sanad_taraf_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            
+                 report.UC_Report_sanad_taraf UC = new report.UC_Report_sanad_taraf();
+            tabbedView1.AddDocument(UC).Caption = e.Item.Caption + " (" + DateTime.Now.ToLongTimeString() + ")";
+            tabbedView1.ActivateDocument(UC);
+        }
+
+ 
+
+        private void br_sud_chart_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            report.UC_sud_chart UC = new report.UC_sud_chart();
+            tabbedView1.AddDocument(UC).Caption = e.Item.Caption + " (" + DateTime.Now.ToLongTimeString() + ")";
+            tabbedView1.ActivateDocument(UC);
         }
     }
 }

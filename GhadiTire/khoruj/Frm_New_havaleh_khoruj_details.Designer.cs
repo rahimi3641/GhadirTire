@@ -29,16 +29,23 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem4 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem2 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_New_havaleh_khoruj_details));
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem1 = new DevExpress.Utils.ToolTipSeparatorItem();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_New_havaleh_khoruj_details));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions5 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject17 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject18 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject19 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject20 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
@@ -46,13 +53,6 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem3 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             this.gridLookUpEdit_taraf = new DevExpress.XtraEditors.GridLookUpEdit();
             this.gridView_taraf = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -158,6 +158,8 @@
             this.controlContainer3 = new DevExpress.XtraBars.Docking.ControlContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.txt_maliat_havaleh_khoruj_details = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
@@ -216,6 +218,7 @@
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_maliat_havaleh_khoruj_details.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_id_havaleh_khoruj_end.Properties)).BeginInit();
@@ -372,13 +375,13 @@
             this.txt_sho_havaleh_khoruj.Properties.Appearance.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_sho_havaleh_khoruj.Properties.Appearance.Options.UseFont = true;
             this.txt_sho_havaleh_khoruj.Size = new System.Drawing.Size(248, 38);
-            toolTipItem1.Text = "نکته:به ازای هر شماره حواله در تاریخ مورد نظر با یک طرف حساب،سریال جدید ایجاد می " +
+            toolTipItem4.Text = "نکته:به ازای هر شماره حواله در تاریخ مورد نظر با یک طرف حساب،سریال جدید ایجاد می " +
     "شود.";
-            toolTipTitleItem1.Text = "شماره حواله قابل تخصیص ";
-            superToolTip1.Items.Add(toolTipItem1);
-            superToolTip1.Items.Add(toolTipSeparatorItem1);
-            superToolTip1.Items.Add(toolTipTitleItem1);
-            this.txt_sho_havaleh_khoruj.SuperTip = superToolTip1;
+            toolTipTitleItem2.Text = "شماره حواله قابل تخصیص ";
+            superToolTip4.Items.Add(toolTipItem4);
+            superToolTip4.Items.Add(toolTipSeparatorItem2);
+            superToolTip4.Items.Add(toolTipTitleItem2);
+            this.txt_sho_havaleh_khoruj.SuperTip = superToolTip4;
             this.txt_sho_havaleh_khoruj.TabIndex = 5;
             // 
             // labelControl19
@@ -715,9 +718,9 @@
             // rp_del
             // 
             this.rp_del.AutoHeight = false;
-            editorButtonImageOptions1.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions1.SvgImage")));
+            editorButtonImageOptions4.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions4.SvgImage")));
             this.rp_del.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.rp_del.Name = "rp_del";
             this.rp_del.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
@@ -1636,9 +1639,9 @@
             this.txt_sho_havaleh_khoruj_end.Properties.Appearance.Options.UseFont = true;
             this.txt_sho_havaleh_khoruj_end.Properties.ReadOnly = true;
             this.txt_sho_havaleh_khoruj_end.Size = new System.Drawing.Size(486, 38);
-            toolTipItem2.Text = "شماره حواله مربوط به آخرین سریال حواله";
-            superToolTip2.Items.Add(toolTipItem2);
-            this.txt_sho_havaleh_khoruj_end.SuperTip = superToolTip2;
+            toolTipItem1.Text = "شماره حواله مربوط به آخرین سریال حواله";
+            superToolTip1.Items.Add(toolTipItem1);
+            this.txt_sho_havaleh_khoruj_end.SuperTip = superToolTip1;
             this.txt_sho_havaleh_khoruj_end.TabIndex = 17;
             // 
             // txt_mablagh_havaleh_khoruj_details_kol
@@ -1646,7 +1649,7 @@
             this.txt_mablagh_havaleh_khoruj_details_kol.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_mablagh_havaleh_khoruj_details_kol.EditValue = "0";
             this.txt_mablagh_havaleh_khoruj_details_kol.Enabled = false;
-            this.txt_mablagh_havaleh_khoruj_details_kol.Location = new System.Drawing.Point(45, 155);
+            this.txt_mablagh_havaleh_khoruj_details_kol.Location = new System.Drawing.Point(417, 197);
             this.txt_mablagh_havaleh_khoruj_details_kol.Name = "txt_mablagh_havaleh_khoruj_details_kol";
             this.txt_mablagh_havaleh_khoruj_details_kol.Properties.Appearance.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_mablagh_havaleh_khoruj_details_kol.Properties.Appearance.Options.UseFont = true;
@@ -1670,7 +1673,7 @@
             this.txt_mablagh_havaleh_khoruj_details.Properties.Appearance.Options.UseFont = true;
             this.txt_mablagh_havaleh_khoruj_details.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.txt_mablagh_havaleh_khoruj_details.Properties.MaskSettings.Set("mask", "n0");
-            this.txt_mablagh_havaleh_khoruj_details.Properties.MaskSettings.Set("valueType", typeof(int));
+            this.txt_mablagh_havaleh_khoruj_details.Properties.MaskSettings.Set("valueType", typeof(long));
             this.txt_mablagh_havaleh_khoruj_details.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
             this.txt_mablagh_havaleh_khoruj_details.Properties.UseMaskAsDisplayFormat = true;
             this.txt_mablagh_havaleh_khoruj_details.Size = new System.Drawing.Size(141, 38);
@@ -1718,7 +1721,7 @@
             this.labelControl6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl6.Appearance.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(191, 158);
+            this.labelControl6.Location = new System.Drawing.Point(563, 200);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(49, 32);
             this.labelControl6.TabIndex = 13;
@@ -1827,6 +1830,8 @@
             // 
             // groupControl3
             // 
+            this.groupControl3.Controls.Add(this.txt_maliat_havaleh_khoruj_details);
+            this.groupControl3.Controls.Add(this.labelControl10);
             this.groupControl3.Controls.Add(this.txt_mablagh_havaleh_khoruj_details_kol);
             this.groupControl3.Controls.Add(this.gridLookUpEdit_kala);
             this.groupControl3.Controls.Add(this.txt_tedad_havaleh_khoruj_details);
@@ -1844,6 +1849,34 @@
             this.groupControl3.Size = new System.Drawing.Size(672, 279);
             this.groupControl3.TabIndex = 1;
             this.groupControl3.Text = "کالا";
+            // 
+            // txt_maliat_havaleh_khoruj_details
+            // 
+            this.txt_maliat_havaleh_khoruj_details.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_maliat_havaleh_khoruj_details.EditValue = "0";
+            this.txt_maliat_havaleh_khoruj_details.Location = new System.Drawing.Point(45, 145);
+            this.txt_maliat_havaleh_khoruj_details.Name = "txt_maliat_havaleh_khoruj_details";
+            this.txt_maliat_havaleh_khoruj_details.Properties.Appearance.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_maliat_havaleh_khoruj_details.Properties.Appearance.Options.UseFont = true;
+            this.txt_maliat_havaleh_khoruj_details.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.txt_maliat_havaleh_khoruj_details.Properties.MaskSettings.Set("mask", "n0");
+            this.txt_maliat_havaleh_khoruj_details.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
+            this.txt_maliat_havaleh_khoruj_details.Properties.MaskSettings.Set("valueType", typeof(long));
+            this.txt_maliat_havaleh_khoruj_details.Properties.UseMaskAsDisplayFormat = true;
+            this.txt_maliat_havaleh_khoruj_details.Size = new System.Drawing.Size(141, 38);
+            this.txt_maliat_havaleh_khoruj_details.TabIndex = 14;
+            this.txt_maliat_havaleh_khoruj_details.EditValueChanged += new System.EventHandler(this.txt_maliat_havaleh_khoruj_details_EditValueChanged);
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelControl10.Appearance.Options.UseFont = true;
+            this.labelControl10.Location = new System.Drawing.Point(194, 148);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(49, 32);
+            this.labelControl10.TabIndex = 15;
+            this.labelControl10.Text = "مالیات:";
             // 
             // groupControl2
             // 
@@ -1895,16 +1928,16 @@
             this.txt_id_havaleh_khoruj_end.Name = "txt_id_havaleh_khoruj_end";
             this.txt_id_havaleh_khoruj_end.Properties.Appearance.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_id_havaleh_khoruj_end.Properties.Appearance.Options.UseFont = true;
-            editorButtonImageOptions3.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions3.SvgImage")));
+            editorButtonImageOptions5.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions5.SvgImage")));
             this.txt_id_havaleh_khoruj_end.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.txt_id_havaleh_khoruj_end.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.txt_id_havaleh_khoruj_end.Properties.MaskSettings.Set("mask", "d");
             this.txt_id_havaleh_khoruj_end.Size = new System.Drawing.Size(486, 46);
-            toolTipItem3.Text = "سریال حواله توسط نرم افزار ایجاد می شود\r\nبا زدن دکمه جستجو ردیف های حواله مربوط ب" +
+            toolTipItem2.Text = "سریال حواله توسط نرم افزار ایجاد می شود\r\nبا زدن دکمه جستجو ردیف های حواله مربوط ب" +
     "ه سریال نمایش داده می شود";
-            superToolTip3.Items.Add(toolTipItem3);
-            this.txt_id_havaleh_khoruj_end.SuperTip = superToolTip3;
+            superToolTip2.Items.Add(toolTipItem2);
+            this.txt_id_havaleh_khoruj_end.SuperTip = superToolTip2;
             this.txt_id_havaleh_khoruj_end.TabIndex = 1;
             this.txt_id_havaleh_khoruj_end.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txt_id_havaleh_khoruj_end_ButtonClick);
             // 
@@ -2271,9 +2304,9 @@
             // repositoryItemButtonEdit1
             // 
             this.repositoryItemButtonEdit1.AutoHeight = false;
-            editorButtonImageOptions2.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions2.SvgImage")));
+            editorButtonImageOptions3.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions3.SvgImage")));
             this.repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
             this.repositoryItemButtonEdit1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
@@ -2436,6 +2469,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_maliat_havaleh_khoruj_details.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
@@ -2595,5 +2629,7 @@
         private DevExpress.XtraBars.Docking.DockPanel panelContainer1;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl9;
+        private DevExpress.XtraEditors.TextEdit txt_maliat_havaleh_khoruj_details;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
     }
 }

@@ -29,11 +29,24 @@
         private void InitializeComponent()
         {
             DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions buttonImageOptions1 = new DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_sanad));
             DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions buttonImageOptions2 = new DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions();
             DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions buttonImageOptions3 = new DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_sanad));
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.gridControl_sanad = new DevExpress.XtraGrid.GridControl();
             this.gridView_sanad = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -41,6 +54,17 @@
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn27 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.r_p_btn_edit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.gridControl_sanad_file = new DevExpress.XtraGrid.GridControl();
+            this.gridView_sanad_file = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn16 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.rp_btn_edit_file = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.gridControl_sanad_bed = new DevExpress.XtraGrid.GridControl();
             this.gridView_sanad_bed = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -55,8 +79,16 @@
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
+            this.splitContainer2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_sanad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_sanad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.r_p_btn_edit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_sanad_file)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_sanad_file)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rp_btn_edit_file)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_sanad_bed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_sanad_bed)).BeginInit();
             this.SuspendLayout();
@@ -83,7 +115,7 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.gridControl_sanad);
+            this.groupControl1.Controls.Add(this.splitContainer2);
             buttonImageOptions1.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("buttonImageOptions1.SvgImage")));
             buttonImageOptions2.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("buttonImageOptions2.SvgImage")));
             buttonImageOptions3.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("buttonImageOptions3.SvgImage")));
@@ -99,14 +131,36 @@
             this.groupControl1.TabIndex = 3;
             this.groupControl1.CustomButtonClick += new DevExpress.XtraBars.Docking2010.BaseButtonEventHandler(this.groupControl1_CustomButtonClick);
             // 
+            // splitContainer2
+            // 
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.Location = new System.Drawing.Point(2, 54);
+            this.splitContainer2.Name = "splitContainer2";
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.Controls.Add(this.gridControl_sanad);
+            this.splitContainer2.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.Controls.Add(this.gridControl_sanad_file);
+            this.splitContainer2.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.splitContainer2.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel2_Paint);
+            this.splitContainer2.Size = new System.Drawing.Size(1257, 423);
+            this.splitContainer2.SplitterDistance = 979;
+            this.splitContainer2.TabIndex = 1;
+            // 
             // gridControl_sanad
             // 
             this.gridControl_sanad.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl_sanad.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.gridControl_sanad.Location = new System.Drawing.Point(2, 54);
+            this.gridControl_sanad.Location = new System.Drawing.Point(0, 0);
             this.gridControl_sanad.MainView = this.gridView_sanad;
             this.gridControl_sanad.Name = "gridControl_sanad";
-            this.gridControl_sanad.Size = new System.Drawing.Size(1257, 423);
+            this.gridControl_sanad.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.r_p_btn_edit});
+            this.gridControl_sanad.Size = new System.Drawing.Size(979, 423);
             this.gridControl_sanad.TabIndex = 0;
             this.gridControl_sanad.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView_sanad});
@@ -230,7 +284,8 @@
             this.gridColumn4,
             this.gridColumn2,
             this.gridColumn14,
-            this.gridColumn27});
+            this.gridColumn27,
+            this.gridColumn10});
             this.gridView_sanad.GridControl = this.gridControl_sanad;
             this.gridView_sanad.Name = "gridView_sanad";
             this.gridView_sanad.OptionsView.ColumnAutoWidth = false;
@@ -300,6 +355,263 @@
             this.gridColumn27.Visible = true;
             this.gridColumn27.VisibleIndex = 1;
             this.gridColumn27.Width = 94;
+            // 
+            // gridColumn10
+            // 
+            this.gridColumn10.Caption = "عملیات";
+            this.gridColumn10.ColumnEdit = this.r_p_btn_edit;
+            this.gridColumn10.MinWidth = 25;
+            this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.Visible = true;
+            this.gridColumn10.VisibleIndex = 4;
+            this.gridColumn10.Width = 74;
+            // 
+            // r_p_btn_edit
+            // 
+            this.r_p_btn_edit.AutoHeight = false;
+            editorButtonImageOptions1.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions1.SvgImage")));
+            toolTipItem1.Text = "الصاق فایل ضمیمه به سند";
+            superToolTip1.Items.Add(toolTipItem1);
+            this.r_p_btn_edit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, superToolTip1, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.r_p_btn_edit.Name = "r_p_btn_edit";
+            this.r_p_btn_edit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.r_p_btn_edit.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.r_p_btn_edit_ButtonClick);
+            // 
+            // gridControl_sanad_file
+            // 
+            this.gridControl_sanad_file.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_sanad_file.Location = new System.Drawing.Point(0, 0);
+            this.gridControl_sanad_file.MainView = this.gridView_sanad_file;
+            this.gridControl_sanad_file.Name = "gridControl_sanad_file";
+            this.gridControl_sanad_file.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.rp_btn_edit_file});
+            this.gridControl_sanad_file.Size = new System.Drawing.Size(274, 423);
+            this.gridControl_sanad_file.TabIndex = 0;
+            this.gridControl_sanad_file.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView_sanad_file});
+            // 
+            // gridView_sanad_file
+            // 
+            this.gridView_sanad_file.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_sanad_file.Appearance.ColumnFilterButton.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.gridView_sanad_file.Appearance.ColumnFilterButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_sanad_file.Appearance.ColumnFilterButton.ForeColor = System.Drawing.Color.Gray;
+            this.gridView_sanad_file.Appearance.ColumnFilterButton.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.ColumnFilterButton.Options.UseBorderColor = true;
+            this.gridView_sanad_file.Appearance.ColumnFilterButton.Options.UseForeColor = true;
+            this.gridView_sanad_file.Appearance.ColumnFilterButtonActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.gridView_sanad_file.Appearance.ColumnFilterButtonActive.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(211)))), ((int)(((byte)(218)))));
+            this.gridView_sanad_file.Appearance.ColumnFilterButtonActive.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.gridView_sanad_file.Appearance.ColumnFilterButtonActive.ForeColor = System.Drawing.Color.Blue;
+            this.gridView_sanad_file.Appearance.ColumnFilterButtonActive.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.ColumnFilterButtonActive.Options.UseBorderColor = true;
+            this.gridView_sanad_file.Appearance.ColumnFilterButtonActive.Options.UseForeColor = true;
+            this.gridView_sanad_file.Appearance.Empty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.gridView_sanad_file.Appearance.Empty.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.EvenRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_sanad_file.Appearance.EvenRow.BackColor2 = System.Drawing.Color.GhostWhite;
+            this.gridView_sanad_file.Appearance.EvenRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_sanad_file.Appearance.EvenRow.ForeColor = System.Drawing.Color.Black;
+            this.gridView_sanad_file.Appearance.EvenRow.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.gridView_sanad_file.Appearance.EvenRow.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.EvenRow.Options.UseFont = true;
+            this.gridView_sanad_file.Appearance.EvenRow.Options.UseForeColor = true;
+            this.gridView_sanad_file.Appearance.FilterCloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(208)))), ((int)(((byte)(200)))));
+            this.gridView_sanad_file.Appearance.FilterCloseButton.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
+            this.gridView_sanad_file.Appearance.FilterCloseButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(208)))), ((int)(((byte)(200)))));
+            this.gridView_sanad_file.Appearance.FilterCloseButton.ForeColor = System.Drawing.Color.Black;
+            this.gridView_sanad_file.Appearance.FilterCloseButton.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.gridView_sanad_file.Appearance.FilterCloseButton.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.FilterCloseButton.Options.UseBorderColor = true;
+            this.gridView_sanad_file.Appearance.FilterCloseButton.Options.UseForeColor = true;
+            this.gridView_sanad_file.Appearance.FilterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(98)))), ((int)(((byte)(98)))));
+            this.gridView_sanad_file.Appearance.FilterPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(208)))), ((int)(((byte)(200)))));
+            this.gridView_sanad_file.Appearance.FilterPanel.ForeColor = System.Drawing.Color.White;
+            this.gridView_sanad_file.Appearance.FilterPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.gridView_sanad_file.Appearance.FilterPanel.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.FilterPanel.Options.UseForeColor = true;
+            this.gridView_sanad_file.Appearance.FixedLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(26)))), ((int)(((byte)(42)))));
+            this.gridView_sanad_file.Appearance.FixedLine.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.FocusedCell.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_sanad_file.Appearance.FocusedCell.Options.UseFont = true;
+            this.gridView_sanad_file.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(96)))), ((int)(((byte)(112)))));
+            this.gridView_sanad_file.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(146)))), ((int)(((byte)(162)))));
+            this.gridView_sanad_file.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_sanad_file.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
+            this.gridView_sanad_file.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.FocusedRow.Options.UseFont = true;
+            this.gridView_sanad_file.Appearance.FocusedRow.Options.UseForeColor = true;
+            this.gridView_sanad_file.Appearance.FooterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_sanad_file.Appearance.FooterPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_sanad_file.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_sanad_file.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Black;
+            this.gridView_sanad_file.Appearance.FooterPanel.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.FooterPanel.Options.UseBorderColor = true;
+            this.gridView_sanad_file.Appearance.FooterPanel.Options.UseFont = true;
+            this.gridView_sanad_file.Appearance.FooterPanel.Options.UseForeColor = true;
+            this.gridView_sanad_file.Appearance.GroupButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_sanad_file.Appearance.GroupButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_sanad_file.Appearance.GroupButton.ForeColor = System.Drawing.Color.Black;
+            this.gridView_sanad_file.Appearance.GroupButton.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.GroupButton.Options.UseBorderColor = true;
+            this.gridView_sanad_file.Appearance.GroupButton.Options.UseForeColor = true;
+            this.gridView_sanad_file.Appearance.GroupFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(186)))), ((int)(((byte)(194)))));
+            this.gridView_sanad_file.Appearance.GroupFooter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(186)))), ((int)(((byte)(194)))));
+            this.gridView_sanad_file.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Black;
+            this.gridView_sanad_file.Appearance.GroupFooter.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.GroupFooter.Options.UseBorderColor = true;
+            this.gridView_sanad_file.Appearance.GroupFooter.Options.UseForeColor = true;
+            this.gridView_sanad_file.Appearance.GroupPanel.BackColor = System.Drawing.Color.Gray;
+            this.gridView_sanad_file.Appearance.GroupPanel.BackColor2 = System.Drawing.Color.White;
+            this.gridView_sanad_file.Appearance.GroupPanel.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.gridView_sanad_file.Appearance.GroupPanel.ForeColor = System.Drawing.Color.White;
+            this.gridView_sanad_file.Appearance.GroupPanel.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.GroupPanel.Options.UseFont = true;
+            this.gridView_sanad_file.Appearance.GroupPanel.Options.UseForeColor = true;
+            this.gridView_sanad_file.Appearance.GroupRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(96)))), ((int)(((byte)(112)))));
+            this.gridView_sanad_file.Appearance.GroupRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_sanad_file.Appearance.GroupRow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.gridView_sanad_file.Appearance.GroupRow.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.GroupRow.Options.UseFont = true;
+            this.gridView_sanad_file.Appearance.GroupRow.Options.UseForeColor = true;
+            this.gridView_sanad_file.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_sanad_file.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_sanad_file.Appearance.HeaderPanel.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.gridView_sanad_file.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Black;
+            this.gridView_sanad_file.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.HeaderPanel.Options.UseBorderColor = true;
+            this.gridView_sanad_file.Appearance.HeaderPanel.Options.UseFont = true;
+            this.gridView_sanad_file.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.gridView_sanad_file.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.Gray;
+            this.gridView_sanad_file.Appearance.HideSelectionRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_sanad_file.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(208)))), ((int)(((byte)(200)))));
+            this.gridView_sanad_file.Appearance.HideSelectionRow.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.HideSelectionRow.Options.UseFont = true;
+            this.gridView_sanad_file.Appearance.HideSelectionRow.Options.UseForeColor = true;
+            this.gridView_sanad_file.Appearance.HorzLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_sanad_file.Appearance.HorzLine.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.OddRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(216)))), ((int)(((byte)(224)))));
+            this.gridView_sanad_file.Appearance.OddRow.BackColor2 = System.Drawing.Color.White;
+            this.gridView_sanad_file.Appearance.OddRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_sanad_file.Appearance.OddRow.ForeColor = System.Drawing.Color.Black;
+            this.gridView_sanad_file.Appearance.OddRow.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.gridView_sanad_file.Appearance.OddRow.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.OddRow.Options.UseFont = true;
+            this.gridView_sanad_file.Appearance.OddRow.Options.UseForeColor = true;
+            this.gridView_sanad_file.Appearance.Preview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(236)))), ((int)(((byte)(244)))));
+            this.gridView_sanad_file.Appearance.Preview.BackColor2 = System.Drawing.Color.White;
+            this.gridView_sanad_file.Appearance.Preview.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_sanad_file.Appearance.Preview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(96)))), ((int)(((byte)(112)))));
+            this.gridView_sanad_file.Appearance.Preview.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.Preview.Options.UseFont = true;
+            this.gridView_sanad_file.Appearance.Preview.Options.UseForeColor = true;
+            this.gridView_sanad_file.Appearance.Row.BackColor = System.Drawing.Color.White;
+            this.gridView_sanad_file.Appearance.Row.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.gridView_sanad_file.Appearance.Row.ForeColor = System.Drawing.Color.Black;
+            this.gridView_sanad_file.Appearance.Row.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.Row.Options.UseFont = true;
+            this.gridView_sanad_file.Appearance.Row.Options.UseForeColor = true;
+            this.gridView_sanad_file.Appearance.RowSeparator.BackColor = System.Drawing.Color.White;
+            this.gridView_sanad_file.Appearance.RowSeparator.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.gridView_sanad_file.Appearance.RowSeparator.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.SelectedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(106)))), ((int)(((byte)(122)))));
+            this.gridView_sanad_file.Appearance.SelectedRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_sanad_file.Appearance.SelectedRow.ForeColor = System.Drawing.Color.White;
+            this.gridView_sanad_file.Appearance.SelectedRow.Options.UseBackColor = true;
+            this.gridView_sanad_file.Appearance.SelectedRow.Options.UseFont = true;
+            this.gridView_sanad_file.Appearance.SelectedRow.Options.UseForeColor = true;
+            this.gridView_sanad_file.Appearance.TopNewRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_sanad_file.Appearance.TopNewRow.Options.UseFont = true;
+            this.gridView_sanad_file.Appearance.VertLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_sanad_file.Appearance.VertLine.Options.UseBackColor = true;
+            this.gridView_sanad_file.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn11,
+            this.gridColumn12,
+            this.gridColumn13,
+            this.gridColumn15,
+            this.gridColumn16,
+            this.gridColumn17});
+            this.gridView_sanad_file.GridControl = this.gridControl_sanad_file;
+            this.gridView_sanad_file.Name = "gridView_sanad_file";
+            this.gridView_sanad_file.OptionsView.ColumnAutoWidth = false;
+            this.gridView_sanad_file.OptionsView.EnableAppearanceEvenRow = true;
+            this.gridView_sanad_file.OptionsView.EnableAppearanceOddRow = true;
+            this.gridView_sanad_file.OptionsView.ShowGroupPanel = false;
+            this.gridView_sanad_file.PaintStyleName = "Office2003";
+            this.gridView_sanad_file.RowHeight = 25;
+            // 
+            // gridColumn11
+            // 
+            this.gridColumn11.Caption = "سریال";
+            this.gridColumn11.FieldName = "id_sanad_fail";
+            this.gridColumn11.MinWidth = 25;
+            this.gridColumn11.Name = "gridColumn11";
+            this.gridColumn11.OptionsColumn.AllowEdit = false;
+            this.gridColumn11.OptionsColumn.AllowFocus = false;
+            this.gridColumn11.Width = 94;
+            // 
+            // gridColumn12
+            // 
+            this.gridColumn12.Caption = "سریال سند";
+            this.gridColumn12.FieldName = "id_sanad";
+            this.gridColumn12.MinWidth = 25;
+            this.gridColumn12.Name = "gridColumn12";
+            this.gridColumn12.OptionsColumn.AllowEdit = false;
+            this.gridColumn12.OptionsColumn.AllowFocus = false;
+            this.gridColumn12.Width = 94;
+            // 
+            // gridColumn13
+            // 
+            this.gridColumn13.Caption = "نام فایل";
+            this.gridColumn13.FieldName = "file_name";
+            this.gridColumn13.MinWidth = 25;
+            this.gridColumn13.Name = "gridColumn13";
+            this.gridColumn13.OptionsColumn.AllowEdit = false;
+            this.gridColumn13.OptionsColumn.AllowFocus = false;
+            this.gridColumn13.Width = 94;
+            // 
+            // gridColumn15
+            // 
+            this.gridColumn15.Caption = "پسوند";
+            this.gridColumn15.FieldName = "flie_ext";
+            this.gridColumn15.MinWidth = 25;
+            this.gridColumn15.Name = "gridColumn15";
+            this.gridColumn15.OptionsColumn.AllowEdit = false;
+            this.gridColumn15.OptionsColumn.AllowFocus = false;
+            this.gridColumn15.Width = 94;
+            // 
+            // gridColumn16
+            // 
+            this.gridColumn16.Caption = "توضیحات";
+            this.gridColumn16.FieldName = "tozihat_sanad_file";
+            this.gridColumn16.MinWidth = 25;
+            this.gridColumn16.Name = "gridColumn16";
+            this.gridColumn16.OptionsColumn.AllowEdit = false;
+            this.gridColumn16.OptionsColumn.AllowFocus = false;
+            this.gridColumn16.Visible = true;
+            this.gridColumn16.VisibleIndex = 0;
+            this.gridColumn16.Width = 139;
+            // 
+            // gridColumn17
+            // 
+            this.gridColumn17.Caption = "عملیات";
+            this.gridColumn17.ColumnEdit = this.rp_btn_edit_file;
+            this.gridColumn17.MinWidth = 25;
+            this.gridColumn17.Name = "gridColumn17";
+            this.gridColumn17.Visible = true;
+            this.gridColumn17.VisibleIndex = 1;
+            this.gridColumn17.Width = 94;
+            // 
+            // rp_btn_edit_file
+            // 
+            this.rp_btn_edit_file.AutoHeight = false;
+            editorButtonImageOptions2.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions2.SvgImage")));
+            this.rp_btn_edit_file.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.rp_btn_edit_file.Name = "rp_btn_edit_file";
+            this.rp_btn_edit_file.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.rp_btn_edit_file.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.rp_btn_edit_file_ButtonClick);
             // 
             // gridControl_sanad_bed
             // 
@@ -544,8 +856,16 @@
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_sanad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_sanad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.r_p_btn_edit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_sanad_file)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_sanad_file)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rp_btn_edit_file)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_sanad_bed)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_sanad_bed)).EndInit();
             this.ResumeLayout(false);
@@ -571,5 +891,17 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private System.Windows.Forms.SplitContainer splitContainer2;
+        private DevExpress.XtraGrid.GridControl gridControl_sanad_file;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView_sanad_file;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit r_p_btn_edit;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn15;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn16;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn17;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit rp_btn_edit_file;
     }
 }

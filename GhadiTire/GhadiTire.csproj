@@ -49,6 +49,8 @@
     <Reference Include="DevExpress.Utils.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraCharts.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.2.Wizard, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v22.2" />
     <Reference Include="DevExpress.Printing.v22.2.Core" />
     <Reference Include="DevExpress.Drawing.v22.2" />
@@ -68,6 +70,11 @@
     </Reference>
     <Reference Include="ExcelDataReader.DataSet">
       <HintPath>..\..\..\..\CBS_HARA\CBS_HARA\bin\Debug\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\Office15\Microsoft.Office.Interop.Excel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -141,6 +148,18 @@
     <Compile Include="report\UC_Report_sanad.Designer.cs">
       <DependentUpon>UC_Report_sanad.cs</DependentUpon>
     </Compile>
+    <Compile Include="report\UC_Report_sanad_taraf.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="report\UC_Report_sanad_taraf.Designer.cs">
+      <DependentUpon>UC_Report_sanad_taraf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report\UC_sud_chart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="report\UC_sud_chart.Designer.cs">
+      <DependentUpon>UC_sud_chart.cs</DependentUpon>
+    </Compile>
     <Compile Include="sanad\Frm_Edit_taraf.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +171,12 @@
     </Compile>
     <Compile Include="sanad\Frm_New_sanad.Designer.cs">
       <DependentUpon>Frm_New_sanad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sanad\Frm_New_sanad_File.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sanad\Frm_New_sanad_File.Designer.cs">
+      <DependentUpon>Frm_New_sanad_File.cs</DependentUpon>
     </Compile>
     <Compile Include="sanad\Frm_New_taraf.cs">
       <SubType>Form</SubType>
@@ -201,6 +226,12 @@
     <Compile Include="vorud\Frm_New_kala.Designer.cs">
       <DependentUpon>Frm_New_kala.cs</DependentUpon>
     </Compile>
+    <Compile Include="vorud\Frm_New_havaleh_vorud_File.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vorud\Frm_New_havaleh_vorud_File.Designer.cs">
+      <DependentUpon>Frm_New_havaleh_vorud_File.cs</DependentUpon>
+    </Compile>
     <Compile Include="vorud\UC_havaleh_vorud_details.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -245,11 +276,20 @@
     <EmbeddedResource Include="report\UC_Report_sanad.resx">
       <DependentUpon>UC_Report_sanad.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="report\UC_Report_sanad_taraf.resx">
+      <DependentUpon>UC_Report_sanad_taraf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\UC_sud_chart.resx">
+      <DependentUpon>UC_sud_chart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="sanad\Frm_Edit_taraf.resx">
       <DependentUpon>Frm_Edit_taraf.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="sanad\Frm_New_sanad.resx">
       <DependentUpon>Frm_New_sanad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sanad\Frm_New_sanad_File.resx">
+      <DependentUpon>Frm_New_sanad_File.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="sanad\Frm_New_taraf.resx">
       <DependentUpon>Frm_New_taraf.cs</DependentUpon>
@@ -274,6 +314,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vorud\Frm_New_kala.resx">
       <DependentUpon>Frm_New_kala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vorud\Frm_New_havaleh_vorud_File.resx">
+      <DependentUpon>Frm_New_havaleh_vorud_File.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vorud\UC_havaleh_vorud_details.resx">
       <DependentUpon>UC_havaleh_vorud_details.cs</DependentUpon>

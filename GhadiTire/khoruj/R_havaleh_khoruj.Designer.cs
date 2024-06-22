@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(R_havaleh_khoruj));
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.xrLabel21 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel20 = new DevExpress.XtraReports.UI.XRLabel();
             this.lbl_sho_havaleh_vorud = new DevExpress.XtraReports.UI.XRLabel();
             this.lbl_date_havaleh_vorud = new DevExpress.XtraReports.UI.XRLabel();
@@ -47,6 +48,7 @@
             this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel15 = new DevExpress.XtraReports.UI.XRLabel();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.xrLabel22 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
@@ -60,11 +62,13 @@
             this.sho_havaleh_khoruj = new DevExpress.XtraReports.Parameters.Parameter();
             this.name_taraf = new DevExpress.XtraReports.Parameters.Parameter();
             this.date_havaleh_khoruj = new DevExpress.XtraReports.Parameters.Parameter();
+            this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
             // 
             this.TopMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel21,
             this.xrLabel20,
             this.lbl_sho_havaleh_vorud,
             this.lbl_date_havaleh_vorud,
@@ -78,10 +82,28 @@
             this.xrLabel3,
             this.xrLabel2,
             this.xrPictureBox1});
-            this.TopMargin.HeightF = 190.1667F;
+            this.TopMargin.HeightF = 236.3422F;
             this.TopMargin.Name = "TopMargin";
             this.TopMargin.StylePriority.UseTextAlignment = false;
             this.TopMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrLabel21
+            // 
+            this.xrLabel21.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrLabel21.BorderWidth = 2F;
+            this.xrLabel21.Font = new DevExpress.Drawing.DXFont("B Titr", 12F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrLabel21.LocationFloat = new DevExpress.Utils.PointFloat(135F, 201.1755F);
+            this.xrLabel21.Multiline = true;
+            this.xrLabel21.Name = "xrLabel21";
+            this.xrLabel21.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel21.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.xrLabel21.Scripts.OnLocationChanged = "xrLabel2_LocationChanged";
+            this.xrLabel21.SizeF = new System.Drawing.SizeF(109.1666F, 35.1667F);
+            this.xrLabel21.StylePriority.UseBorders = false;
+            this.xrLabel21.StylePriority.UseBorderWidth = false;
+            this.xrLabel21.StylePriority.UseFont = false;
+            this.xrLabel21.Text = "مالیات";
             // 
             // xrLabel20
             // 
@@ -90,7 +112,7 @@
             this.xrLabel20.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?name_taraf")});
             this.xrLabel20.Font = new DevExpress.Drawing.DXFont("B Nazanin", 10F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel20.LocationFloat = new DevExpress.Utils.PointFloat(0F, 105.5001F);
+            this.xrLabel20.LocationFloat = new DevExpress.Utils.PointFloat(0F, 70.3334F);
             this.xrLabel20.Multiline = true;
             this.xrLabel20.Name = "xrLabel20";
             this.xrLabel20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -111,7 +133,7 @@
             this.lbl_sho_havaleh_vorud.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?date_havaleh_khoruj")});
             this.lbl_sho_havaleh_vorud.Font = new DevExpress.Drawing.DXFont("B Nazanin", 10F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.lbl_sho_havaleh_vorud.LocationFloat = new DevExpress.Utils.PointFloat(0F, 70.3334F);
+            this.lbl_sho_havaleh_vorud.LocationFloat = new DevExpress.Utils.PointFloat(0F, 35.1667F);
             this.lbl_sho_havaleh_vorud.Multiline = true;
             this.lbl_sho_havaleh_vorud.Name = "lbl_sho_havaleh_vorud";
             this.lbl_sho_havaleh_vorud.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -132,7 +154,7 @@
             this.lbl_date_havaleh_vorud.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?sho_havaleh_khoruj")});
             this.lbl_date_havaleh_vorud.Font = new DevExpress.Drawing.DXFont("B Nazanin", 10F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.lbl_date_havaleh_vorud.LocationFloat = new DevExpress.Utils.PointFloat(0F, 35.1667F);
+            this.lbl_date_havaleh_vorud.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.lbl_date_havaleh_vorud.Multiline = true;
             this.lbl_date_havaleh_vorud.Name = "lbl_date_havaleh_vorud";
             this.lbl_date_havaleh_vorud.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -150,8 +172,8 @@
             // 
             this.xrLabel19.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel19.BorderWidth = 2F;
-            this.xrLabel19.Font = new DevExpress.Drawing.DXFont("B Nazanin", 8F);
-            this.xrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(225F, 90.66658F);
+            this.xrLabel19.Font = new DevExpress.Drawing.DXFont("B Nazanin", 8F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(372.5F, 90.66658F);
             this.xrLabel19.Multiline = true;
             this.xrLabel19.Name = "xrLabel19";
             this.xrLabel19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -162,7 +184,7 @@
             this.xrLabel19.StylePriority.UseBorderWidth = false;
             this.xrLabel19.StylePriority.UseFont = false;
             this.xrLabel19.StylePriority.UseTextAlignment = false;
-            this.xrLabel19.Text = "فاکتور فروش";
+            this.xrLabel19.Text = "صورت حساب فروش کالا";
             this.xrLabel19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrLabel18
@@ -170,7 +192,7 @@
             this.xrLabel18.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel18.BorderWidth = 2F;
             this.xrLabel18.Font = new DevExpress.Drawing.DXFont("B Titr", 12F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(227F, 35.16671F);
+            this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(374.5F, 35.16671F);
             this.xrLabel18.Multiline = true;
             this.xrLabel18.Name = "xrLabel18";
             this.xrLabel18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -189,7 +211,7 @@
             this.xrLabel17.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel17.BorderWidth = 2F;
             this.xrLabel17.Font = new DevExpress.Drawing.DXFont("B Nazanin", 10F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(227F, 0F);
+            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(374.5F, 0F);
             this.xrLabel17.Multiline = true;
             this.xrLabel17.Name = "xrLabel17";
             this.xrLabel17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -209,7 +231,7 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel7.BorderWidth = 2F;
             this.xrLabel7.Font = new DevExpress.Drawing.DXFont("B Titr", 12F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(0F, 154F);
+            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(0F, 201.1754F);
             this.xrLabel7.Multiline = true;
             this.xrLabel7.Name = "xrLabel7";
             this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -227,13 +249,13 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel6.BorderWidth = 2F;
             this.xrLabel6.Font = new DevExpress.Drawing.DXFont("B Titr", 12F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(135.0001F, 154F);
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(383.3333F, 201.1754F);
             this.xrLabel6.Multiline = true;
             this.xrLabel6.Name = "xrLabel6";
             this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel6.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
             this.xrLabel6.Scripts.OnLocationChanged = "xrLabel2_LocationChanged";
-            this.xrLabel6.SizeF = new System.Drawing.SizeF(89.99999F, 35.16671F);
+            this.xrLabel6.SizeF = new System.Drawing.SizeF(128.3333F, 35.16672F);
             this.xrLabel6.StylePriority.UseBorders = false;
             this.xrLabel6.StylePriority.UseBorderWidth = false;
             this.xrLabel6.StylePriority.UseFont = false;
@@ -245,7 +267,7 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel5.BorderWidth = 2F;
             this.xrLabel5.Font = new DevExpress.Drawing.DXFont("B Titr", 12F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(225F, 154F);
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(244.1666F, 201.1755F);
             this.xrLabel5.Multiline = true;
             this.xrLabel5.Name = "xrLabel5";
             this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -263,13 +285,13 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel4.BorderWidth = 2F;
             this.xrLabel4.Font = new DevExpress.Drawing.DXFont("B Titr", 12F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(300.8334F, 154F);
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(319.9999F, 201.1755F);
             this.xrLabel4.Multiline = true;
             this.xrLabel4.Name = "xrLabel4";
             this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel4.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
             this.xrLabel4.Scripts.OnLocationChanged = "xrLabel2_LocationChanged";
-            this.xrLabel4.SizeF = new System.Drawing.SizeF(49.16669F, 35.16671F);
+            this.xrLabel4.SizeF = new System.Drawing.SizeF(63.33337F, 35.16672F);
             this.xrLabel4.StylePriority.UseBorders = false;
             this.xrLabel4.StylePriority.UseBorderWidth = false;
             this.xrLabel4.StylePriority.UseFont = false;
@@ -281,13 +303,13 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel3.BorderWidth = 2F;
             this.xrLabel3.Font = new DevExpress.Drawing.DXFont("B Titr", 12F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(350.0001F, 154F);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(512.6666F, 201.1754F);
             this.xrLabel3.Multiline = true;
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel3.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
             this.xrLabel3.Scripts.OnLocationChanged = "xrLabel2_LocationChanged";
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(246.6666F, 35.16669F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(335.0001F, 35.1667F);
             this.xrLabel3.StylePriority.UseBorders = false;
             this.xrLabel3.StylePriority.UseBorderWidth = false;
             this.xrLabel3.StylePriority.UseFont = false;
@@ -300,7 +322,7 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel2.BorderWidth = 2F;
             this.xrLabel2.Font = new DevExpress.Drawing.DXFont("B Titr", 12F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(596.6667F, 154F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(846.6667F, 201.1754F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -314,19 +336,20 @@
             // 
             // xrPictureBox1
             // 
-            this.xrPictureBox1.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.BottomLeft;
+            this.xrPictureBox1.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.BottomCenter;
             this.xrPictureBox1.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox1.ImageSource"));
-            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(404.5F, 0F);
+            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(511.6666F, 0F);
             this.xrPictureBox1.Name = "xrPictureBox1";
-            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(245.5F, 154F);
+            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(386.3335F, 236.3422F);
             this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.Cover;
             // 
             // BottomMargin
             // 
             this.BottomMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrPageInfo1,
             this.xrLabel16,
             this.xrLabel15});
-            this.BottomMargin.HeightF = 92.99988F;
+            this.BottomMargin.HeightF = 105.9998F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // xrLabel16
@@ -334,7 +357,7 @@
             this.xrLabel16.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel16.BorderWidth = 2F;
             this.xrLabel16.Font = new DevExpress.Drawing.DXFont("B Nazanin", 10F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(421.1666F, 47.83317F);
+            this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(575.307F, 57.83317F);
             this.xrLabel16.Multiline = true;
             this.xrLabel16.Name = "xrLabel16";
             this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -353,7 +376,7 @@
             this.xrLabel15.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel15.BorderWidth = 2F;
             this.xrLabel15.Font = new DevExpress.Drawing.DXFont("B Nazanin", 10F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel15.LocationFloat = new DevExpress.Utils.PointFloat(47.5001F, 47.83317F);
+            this.xrLabel15.LocationFloat = new DevExpress.Utils.PointFloat(207.1492F, 57.83317F);
             this.xrLabel15.Multiline = true;
             this.xrLabel15.Name = "xrLabel15";
             this.xrLabel15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -370,29 +393,55 @@
             // Detail
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel1,
-            this.xrLabel8,
             this.xrLabel9,
             this.xrLabel10,
+            this.xrLabel22,
+            this.xrLabel1,
+            this.xrLabel8,
             this.xrLabel11,
             this.xrLabel12});
             this.Detail.HeightF = 35.16672F;
             this.Detail.Name = "Detail";
             // 
+            // xrLabel22
+            // 
+            this.xrLabel22.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.xrLabel22.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrLabel22.BorderWidth = 1F;
+            this.xrLabel22.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[avg_maliat_havaleh_khoruj_kol]")});
+            this.xrLabel22.Font = new DevExpress.Drawing.DXFont("B Nazanin", 12F);
+            this.xrLabel22.LocationFloat = new DevExpress.Utils.PointFloat(137.0001F, 0F);
+            this.xrLabel22.Multiline = true;
+            this.xrLabel22.Name = "xrLabel22";
+            this.xrLabel22.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel22.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.xrLabel22.Scripts.OnLocationChanged = "xrLabel2_LocationChanged";
+            this.xrLabel22.SizeF = new System.Drawing.SizeF(109.1666F, 35.16671F);
+            this.xrLabel22.StylePriority.UseBorderDashStyle = false;
+            this.xrLabel22.StylePriority.UseBorders = false;
+            this.xrLabel22.StylePriority.UseBorderWidth = false;
+            this.xrLabel22.StylePriority.UseFont = false;
+            this.xrLabel22.StylePriority.UseTextAlignment = false;
+            this.xrLabel22.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrLabel22.TextFormatString = "{0:N0}";
+            // 
             // xrLabel1
             // 
+            this.xrLabel1.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
             this.xrLabel1.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel1.BorderWidth = 1F;
             this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[DataSource.CurrentRowIndex]+1\n")});
             this.xrLabel1.Font = new DevExpress.Drawing.DXFont("B Nazanin", 12F);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(598.6667F, 0F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(846.6667F, 0F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel1.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
             this.xrLabel1.Scripts.OnLocationChanged = "xrLabel2_LocationChanged";
             this.xrLabel1.SizeF = new System.Drawing.SizeF(51.33331F, 35.16669F);
+            this.xrLabel1.StylePriority.UseBorderDashStyle = false;
             this.xrLabel1.StylePriority.UseBorders = false;
             this.xrLabel1.StylePriority.UseBorderWidth = false;
             this.xrLabel1.StylePriority.UseFont = false;
@@ -401,18 +450,20 @@
             // 
             // xrLabel8
             // 
+            this.xrLabel8.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
             this.xrLabel8.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel8.BorderWidth = 1F;
             this.xrLabel8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[sharh_kala]\n")});
             this.xrLabel8.Font = new DevExpress.Drawing.DXFont("B Nazanin", 12F);
-            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(352.0001F, 7.629395E-06F);
+            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(512.6666F, 0F);
             this.xrLabel8.Multiline = true;
             this.xrLabel8.Name = "xrLabel8";
             this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel8.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
             this.xrLabel8.Scripts.OnLocationChanged = "xrLabel2_LocationChanged";
-            this.xrLabel8.SizeF = new System.Drawing.SizeF(246.6666F, 35.16669F);
+            this.xrLabel8.SizeF = new System.Drawing.SizeF(334F, 35.16669F);
+            this.xrLabel8.StylePriority.UseBorderDashStyle = false;
             this.xrLabel8.StylePriority.UseBorders = false;
             this.xrLabel8.StylePriority.UseBorderWidth = false;
             this.xrLabel8.StylePriority.UseFont = false;
@@ -421,18 +472,20 @@
             // 
             // xrLabel9
             // 
+            this.xrLabel9.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
             this.xrLabel9.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel9.BorderWidth = 1F;
             this.xrLabel9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[sum_tedad_havaleh_khoruj_details]\n")});
             this.xrLabel9.Font = new DevExpress.Drawing.DXFont("B Nazanin", 12F);
-            this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(302.8334F, 7.629395E-06F);
+            this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(322.0001F, 0F);
             this.xrLabel9.Multiline = true;
             this.xrLabel9.Name = "xrLabel9";
             this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel9.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
             this.xrLabel9.Scripts.OnLocationChanged = "xrLabel2_LocationChanged";
-            this.xrLabel9.SizeF = new System.Drawing.SizeF(49.16669F, 35.16671F);
+            this.xrLabel9.SizeF = new System.Drawing.SizeF(63.33328F, 35.16671F);
+            this.xrLabel9.StylePriority.UseBorderDashStyle = false;
             this.xrLabel9.StylePriority.UseBorders = false;
             this.xrLabel9.StylePriority.UseBorderWidth = false;
             this.xrLabel9.StylePriority.UseFont = false;
@@ -442,18 +495,20 @@
             // 
             // xrLabel10
             // 
+            this.xrLabel10.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
             this.xrLabel10.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel10.BorderWidth = 1F;
             this.xrLabel10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[name_vahed]\n")});
             this.xrLabel10.Font = new DevExpress.Drawing.DXFont("B Nazanin", 12F);
-            this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(227F, 0F);
+            this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(246.1667F, 0F);
             this.xrLabel10.Multiline = true;
             this.xrLabel10.Name = "xrLabel10";
             this.xrLabel10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel10.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
             this.xrLabel10.Scripts.OnLocationChanged = "xrLabel2_LocationChanged";
             this.xrLabel10.SizeF = new System.Drawing.SizeF(75.83333F, 35.16671F);
+            this.xrLabel10.StylePriority.UseBorderDashStyle = false;
             this.xrLabel10.StylePriority.UseBorders = false;
             this.xrLabel10.StylePriority.UseBorderWidth = false;
             this.xrLabel10.StylePriority.UseFont = false;
@@ -463,18 +518,20 @@
             // 
             // xrLabel11
             // 
+            this.xrLabel11.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
             this.xrLabel11.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel11.BorderWidth = 1F;
             this.xrLabel11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[avg_mablagh_havaleh_khoruj_details]")});
             this.xrLabel11.Font = new DevExpress.Drawing.DXFont("B Nazanin", 12F);
-            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(137.0001F, 7.629395E-06F);
+            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(386.3334F, 0F);
             this.xrLabel11.Multiline = true;
             this.xrLabel11.Name = "xrLabel11";
             this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel11.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
             this.xrLabel11.Scripts.OnLocationChanged = "xrLabel2_LocationChanged";
-            this.xrLabel11.SizeF = new System.Drawing.SizeF(89.99999F, 35.16671F);
+            this.xrLabel11.SizeF = new System.Drawing.SizeF(126.3332F, 35.16671F);
+            this.xrLabel11.StylePriority.UseBorderDashStyle = false;
             this.xrLabel11.StylePriority.UseBorders = false;
             this.xrLabel11.StylePriority.UseBorderWidth = false;
             this.xrLabel11.StylePriority.UseFont = false;
@@ -484,11 +541,12 @@
             // 
             // xrLabel12
             // 
+            this.xrLabel12.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
             this.xrLabel12.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel12.BorderWidth = 1F;
             this.xrLabel12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[fi_havaleh_khoruj_kol]\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[fi_havaleh_khoruj_kol]+[avg_maliat_havaleh_khoruj_kol]\n\n")});
             this.xrLabel12.Font = new DevExpress.Drawing.DXFont("B Nazanin", 12F);
             this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrLabel12.Multiline = true;
@@ -497,6 +555,7 @@
             this.xrLabel12.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
             this.xrLabel12.Scripts.OnLocationChanged = "xrLabel2_LocationChanged";
             this.xrLabel12.SizeF = new System.Drawing.SizeF(137.0001F, 35.16671F);
+            this.xrLabel12.StylePriority.UseBorderDashStyle = false;
             this.xrLabel12.StylePriority.UseBorders = false;
             this.xrLabel12.StylePriority.UseBorderWidth = false;
             this.xrLabel12.StylePriority.UseFont = false;
@@ -550,7 +609,7 @@
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrLabel14,
             this.xrLabel13});
-            this.ReportFooter.HeightF = 41.49989F;
+            this.ReportFooter.HeightF = 39.66656F;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // sho_havaleh_khoruj
@@ -568,6 +627,13 @@
             this.date_havaleh_khoruj.Description = "تاریخ حواله";
             this.date_havaleh_khoruj.Name = "date_havaleh_khoruj";
             // 
+            // xrPageInfo1
+            // 
+            this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 82.99983F);
+            this.xrPageInfo1.Name = "xrPageInfo1";
+            this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrPageInfo1.SizeF = new System.Drawing.SizeF(100F, 23F);
+            // 
             // R_havaleh_khoruj
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -576,7 +642,10 @@
             this.Detail,
             this.ReportFooter});
             this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
-            this.Margins = new DevExpress.Drawing.DXMargins(100F, 100F, 190.1667F, 92.99988F);
+            this.Landscape = true;
+            this.Margins = new DevExpress.Drawing.DXMargins(100F, 100F, 236.3422F, 105.9998F);
+            this.PageHeight = 850;
+            this.PageWidth = 1100;
             this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.sum_fi_havaleh_khoruj_kol, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
@@ -625,5 +694,8 @@
         private DevExpress.XtraReports.Parameters.Parameter sho_havaleh_khoruj;
         private DevExpress.XtraReports.Parameters.Parameter name_taraf;
         private DevExpress.XtraReports.Parameters.Parameter date_havaleh_khoruj;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel21;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel22;
+        private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo1;
     }
 }

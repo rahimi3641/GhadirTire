@@ -44,9 +44,24 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
             DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions buttonImageOptions1 = new DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions();
             DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions buttonImageOptions2 = new DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions();
             DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions buttonImageOptions3 = new DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions();
+            DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions buttonImageOptions4 = new DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions5 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject17 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject18 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject19 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject20 = new DevExpress.Utils.SerializableAppearanceObject();
             this.gridControl_havaleh_vorud_details = new DevExpress.XtraGrid.GridControl();
             this.gridView_havaleh_vorud_details = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -82,23 +97,40 @@
             this.gridColumn25 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn31 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.gridControl_havaleh_vorud_file = new DevExpress.XtraGrid.GridControl();
+            this.gridView_havaleh_vorud_file = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn32 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn33 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn34 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn35 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn36 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn37 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.rp_btn_edit_file = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_havaleh_vorud_details)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_havaleh_vorud_details)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rp_btn_edit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_havaleh_vorud_file)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_havaleh_vorud_file)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rp_btn_edit_file)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl_havaleh_vorud_details
             // 
             this.gridControl_havaleh_vorud_details.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl_havaleh_vorud_details.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.gridControl_havaleh_vorud_details.Location = new System.Drawing.Point(2, 54);
+            this.gridControl_havaleh_vorud_details.Location = new System.Drawing.Point(0, 0);
             this.gridControl_havaleh_vorud_details.MainView = this.gridView_havaleh_vorud_details;
             this.gridControl_havaleh_vorud_details.Name = "gridControl_havaleh_vorud_details";
             this.gridControl_havaleh_vorud_details.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.rp_btn_edit});
-            this.gridControl_havaleh_vorud_details.Size = new System.Drawing.Size(1307, 586);
+            this.gridControl_havaleh_vorud_details.Size = new System.Drawing.Size(1307, 443);
             this.gridControl_havaleh_vorud_details.TabIndex = 0;
             this.gridControl_havaleh_vorud_details.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView_havaleh_vorud_details});
@@ -261,6 +293,7 @@
             this.gridView_havaleh_vorud_details.OptionsView.ShowFooter = true;
             this.gridView_havaleh_vorud_details.OptionsView.ShowGroupPanel = false;
             this.gridView_havaleh_vorud_details.PaintStyleName = "Flat";
+            this.gridView_havaleh_vorud_details.FocusedRowObjectChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowObjectChangedEventHandler(this.gridView_havaleh_vorud_details_FocusedRowObjectChanged);
             this.gridView_havaleh_vorud_details.CustomColumnDisplayText += new DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventHandler(this.gridView_havaleh_vorud_details_CustomColumnDisplayText);
             // 
             // gridColumn1
@@ -357,7 +390,6 @@
             this.gridColumn6.MinWidth = 25;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.OptionsColumn.AllowEdit = false;
-            this.gridColumn6.OptionsColumn.AllowFocus = false;
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 7;
             this.gridColumn6.Width = 93;
@@ -398,7 +430,7 @@
             this.gridColumn30.Name = "gridColumn30";
             this.gridColumn30.Visible = true;
             this.gridColumn30.VisibleIndex = 9;
-            this.gridColumn30.Width = 150;
+            this.gridColumn30.Width = 200;
             // 
             // rp_btn_edit
             // 
@@ -406,10 +438,14 @@
             editorButtonImageOptions1.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions1.SvgImage")));
             editorButtonImageOptions2.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions2.SvgImage")));
             editorButtonImageOptions3.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions3.SvgImage")));
+            editorButtonImageOptions4.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions4.SvgImage")));
+            toolTipItem1.Text = "الصاق فایل ضمیمه به فاکتور ورود کالا";
+            superToolTip1.Items.Add(toolTipItem1);
             this.rp_btn_edit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", null, superToolTip1, DevExpress.Utils.ToolTipAnchor.Default)});
             this.rp_btn_edit.Name = "rp_btn_edit";
             this.rp_btn_edit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.rp_btn_edit.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.rp_btn_edit_ButtonClick);
@@ -616,14 +652,18 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.gridControl_havaleh_vorud_details);
+            this.groupControl1.Controls.Add(this.splitContainer1);
             buttonImageOptions1.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("buttonImageOptions1.SvgImage")));
             buttonImageOptions2.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("buttonImageOptions2.SvgImage")));
             buttonImageOptions3.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("buttonImageOptions3.SvgImage")));
+            buttonImageOptions4.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("buttonImageOptions4.SvgImage")));
+            toolTipItem2.Text = "محاسبه سود در فایل اکسل";
+            superToolTip2.Items.Add(toolTipItem2);
             this.groupControl1.CustomHeaderButtons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
             new DevExpress.XtraEditors.ButtonsPanelControl.GroupBoxButton("", true, buttonImageOptions1, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", 1, true, null, true, false, true, null, -1),
             new DevExpress.XtraEditors.ButtonsPanelControl.GroupBoxButton("", true, buttonImageOptions2, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", 2, true, null, true, false, true, null, -1),
-            new DevExpress.XtraEditors.ButtonsPanelControl.GroupBoxButton("", true, buttonImageOptions3, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", 3, true, null, true, false, true, null, -1)});
+            new DevExpress.XtraEditors.ButtonsPanelControl.GroupBoxButton("", true, buttonImageOptions3, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", 3, true, null, true, false, true, null, -1),
+            new DevExpress.XtraEditors.ButtonsPanelControl.GroupBoxButton("", true, buttonImageOptions4, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", 4, true, superToolTip2, true, false, true, null, -1)});
             this.groupControl1.CustomHeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.BeforeText;
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
@@ -631,6 +671,261 @@
             this.groupControl1.Size = new System.Drawing.Size(1311, 642);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.CustomButtonClick += new DevExpress.XtraBars.Docking2010.BaseButtonEventHandler(this.groupControl1_CustomButtonClick);
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(2, 54);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.gridControl_havaleh_vorud_details);
+            this.splitContainer1.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.gridControl_havaleh_vorud_file);
+            this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.splitContainer1.Size = new System.Drawing.Size(1307, 586);
+            this.splitContainer1.SplitterDistance = 443;
+            this.splitContainer1.TabIndex = 1;
+            // 
+            // gridControl_havaleh_vorud_file
+            // 
+            this.gridControl_havaleh_vorud_file.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_havaleh_vorud_file.Location = new System.Drawing.Point(0, 0);
+            this.gridControl_havaleh_vorud_file.MainView = this.gridView_havaleh_vorud_file;
+            this.gridControl_havaleh_vorud_file.Name = "gridControl_havaleh_vorud_file";
+            this.gridControl_havaleh_vorud_file.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.rp_btn_edit_file});
+            this.gridControl_havaleh_vorud_file.Size = new System.Drawing.Size(1307, 139);
+            this.gridControl_havaleh_vorud_file.TabIndex = 1;
+            this.gridControl_havaleh_vorud_file.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView_havaleh_vorud_file});
+            // 
+            // gridView_havaleh_vorud_file
+            // 
+            this.gridView_havaleh_vorud_file.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_havaleh_vorud_file.Appearance.ColumnFilterButton.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.gridView_havaleh_vorud_file.Appearance.ColumnFilterButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_havaleh_vorud_file.Appearance.ColumnFilterButton.ForeColor = System.Drawing.Color.Gray;
+            this.gridView_havaleh_vorud_file.Appearance.ColumnFilterButton.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.ColumnFilterButton.Options.UseBorderColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.ColumnFilterButton.Options.UseForeColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.ColumnFilterButtonActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.gridView_havaleh_vorud_file.Appearance.ColumnFilterButtonActive.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(211)))), ((int)(((byte)(218)))));
+            this.gridView_havaleh_vorud_file.Appearance.ColumnFilterButtonActive.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.gridView_havaleh_vorud_file.Appearance.ColumnFilterButtonActive.ForeColor = System.Drawing.Color.Blue;
+            this.gridView_havaleh_vorud_file.Appearance.ColumnFilterButtonActive.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.ColumnFilterButtonActive.Options.UseBorderColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.ColumnFilterButtonActive.Options.UseForeColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.Empty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.gridView_havaleh_vorud_file.Appearance.Empty.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.EvenRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_havaleh_vorud_file.Appearance.EvenRow.BackColor2 = System.Drawing.Color.GhostWhite;
+            this.gridView_havaleh_vorud_file.Appearance.EvenRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_havaleh_vorud_file.Appearance.EvenRow.ForeColor = System.Drawing.Color.Black;
+            this.gridView_havaleh_vorud_file.Appearance.EvenRow.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.gridView_havaleh_vorud_file.Appearance.EvenRow.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.EvenRow.Options.UseFont = true;
+            this.gridView_havaleh_vorud_file.Appearance.EvenRow.Options.UseForeColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.FilterCloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(208)))), ((int)(((byte)(200)))));
+            this.gridView_havaleh_vorud_file.Appearance.FilterCloseButton.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
+            this.gridView_havaleh_vorud_file.Appearance.FilterCloseButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(208)))), ((int)(((byte)(200)))));
+            this.gridView_havaleh_vorud_file.Appearance.FilterCloseButton.ForeColor = System.Drawing.Color.Black;
+            this.gridView_havaleh_vorud_file.Appearance.FilterCloseButton.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.gridView_havaleh_vorud_file.Appearance.FilterCloseButton.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.FilterCloseButton.Options.UseBorderColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.FilterCloseButton.Options.UseForeColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.FilterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(98)))), ((int)(((byte)(98)))));
+            this.gridView_havaleh_vorud_file.Appearance.FilterPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(208)))), ((int)(((byte)(200)))));
+            this.gridView_havaleh_vorud_file.Appearance.FilterPanel.ForeColor = System.Drawing.Color.White;
+            this.gridView_havaleh_vorud_file.Appearance.FilterPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.gridView_havaleh_vorud_file.Appearance.FilterPanel.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.FilterPanel.Options.UseForeColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.FixedLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(26)))), ((int)(((byte)(42)))));
+            this.gridView_havaleh_vorud_file.Appearance.FixedLine.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.FocusedCell.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_havaleh_vorud_file.Appearance.FocusedCell.Options.UseFont = true;
+            this.gridView_havaleh_vorud_file.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(96)))), ((int)(((byte)(112)))));
+            this.gridView_havaleh_vorud_file.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(146)))), ((int)(((byte)(162)))));
+            this.gridView_havaleh_vorud_file.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_havaleh_vorud_file.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
+            this.gridView_havaleh_vorud_file.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.FocusedRow.Options.UseFont = true;
+            this.gridView_havaleh_vorud_file.Appearance.FocusedRow.Options.UseForeColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.FooterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_havaleh_vorud_file.Appearance.FooterPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_havaleh_vorud_file.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_havaleh_vorud_file.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Black;
+            this.gridView_havaleh_vorud_file.Appearance.FooterPanel.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.FooterPanel.Options.UseBorderColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.FooterPanel.Options.UseFont = true;
+            this.gridView_havaleh_vorud_file.Appearance.FooterPanel.Options.UseForeColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.GroupButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_havaleh_vorud_file.Appearance.GroupButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_havaleh_vorud_file.Appearance.GroupButton.ForeColor = System.Drawing.Color.Black;
+            this.gridView_havaleh_vorud_file.Appearance.GroupButton.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.GroupButton.Options.UseBorderColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.GroupButton.Options.UseForeColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.GroupFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(186)))), ((int)(((byte)(194)))));
+            this.gridView_havaleh_vorud_file.Appearance.GroupFooter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(186)))), ((int)(((byte)(194)))));
+            this.gridView_havaleh_vorud_file.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Black;
+            this.gridView_havaleh_vorud_file.Appearance.GroupFooter.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.GroupFooter.Options.UseBorderColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.GroupFooter.Options.UseForeColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.GroupPanel.BackColor = System.Drawing.Color.Gray;
+            this.gridView_havaleh_vorud_file.Appearance.GroupPanel.BackColor2 = System.Drawing.Color.White;
+            this.gridView_havaleh_vorud_file.Appearance.GroupPanel.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.gridView_havaleh_vorud_file.Appearance.GroupPanel.ForeColor = System.Drawing.Color.White;
+            this.gridView_havaleh_vorud_file.Appearance.GroupPanel.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.GroupPanel.Options.UseFont = true;
+            this.gridView_havaleh_vorud_file.Appearance.GroupPanel.Options.UseForeColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.GroupRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(96)))), ((int)(((byte)(112)))));
+            this.gridView_havaleh_vorud_file.Appearance.GroupRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_havaleh_vorud_file.Appearance.GroupRow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.gridView_havaleh_vorud_file.Appearance.GroupRow.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.GroupRow.Options.UseFont = true;
+            this.gridView_havaleh_vorud_file.Appearance.GroupRow.Options.UseForeColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_havaleh_vorud_file.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_havaleh_vorud_file.Appearance.HeaderPanel.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.gridView_havaleh_vorud_file.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Black;
+            this.gridView_havaleh_vorud_file.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.HeaderPanel.Options.UseBorderColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.HeaderPanel.Options.UseFont = true;
+            this.gridView_havaleh_vorud_file.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.Gray;
+            this.gridView_havaleh_vorud_file.Appearance.HideSelectionRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_havaleh_vorud_file.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(208)))), ((int)(((byte)(200)))));
+            this.gridView_havaleh_vorud_file.Appearance.HideSelectionRow.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.HideSelectionRow.Options.UseFont = true;
+            this.gridView_havaleh_vorud_file.Appearance.HideSelectionRow.Options.UseForeColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.HorzLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_havaleh_vorud_file.Appearance.HorzLine.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.OddRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(216)))), ((int)(((byte)(224)))));
+            this.gridView_havaleh_vorud_file.Appearance.OddRow.BackColor2 = System.Drawing.Color.White;
+            this.gridView_havaleh_vorud_file.Appearance.OddRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_havaleh_vorud_file.Appearance.OddRow.ForeColor = System.Drawing.Color.Black;
+            this.gridView_havaleh_vorud_file.Appearance.OddRow.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.gridView_havaleh_vorud_file.Appearance.OddRow.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.OddRow.Options.UseFont = true;
+            this.gridView_havaleh_vorud_file.Appearance.OddRow.Options.UseForeColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.Preview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(236)))), ((int)(((byte)(244)))));
+            this.gridView_havaleh_vorud_file.Appearance.Preview.BackColor2 = System.Drawing.Color.White;
+            this.gridView_havaleh_vorud_file.Appearance.Preview.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_havaleh_vorud_file.Appearance.Preview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(96)))), ((int)(((byte)(112)))));
+            this.gridView_havaleh_vorud_file.Appearance.Preview.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.Preview.Options.UseFont = true;
+            this.gridView_havaleh_vorud_file.Appearance.Preview.Options.UseForeColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.Row.BackColor = System.Drawing.Color.White;
+            this.gridView_havaleh_vorud_file.Appearance.Row.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.gridView_havaleh_vorud_file.Appearance.Row.ForeColor = System.Drawing.Color.Black;
+            this.gridView_havaleh_vorud_file.Appearance.Row.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.Row.Options.UseFont = true;
+            this.gridView_havaleh_vorud_file.Appearance.Row.Options.UseForeColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.RowSeparator.BackColor = System.Drawing.Color.White;
+            this.gridView_havaleh_vorud_file.Appearance.RowSeparator.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.gridView_havaleh_vorud_file.Appearance.RowSeparator.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.SelectedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(106)))), ((int)(((byte)(122)))));
+            this.gridView_havaleh_vorud_file.Appearance.SelectedRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_havaleh_vorud_file.Appearance.SelectedRow.ForeColor = System.Drawing.Color.White;
+            this.gridView_havaleh_vorud_file.Appearance.SelectedRow.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.SelectedRow.Options.UseFont = true;
+            this.gridView_havaleh_vorud_file.Appearance.SelectedRow.Options.UseForeColor = true;
+            this.gridView_havaleh_vorud_file.Appearance.TopNewRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView_havaleh_vorud_file.Appearance.TopNewRow.Options.UseFont = true;
+            this.gridView_havaleh_vorud_file.Appearance.VertLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(176)))), ((int)(((byte)(184)))));
+            this.gridView_havaleh_vorud_file.Appearance.VertLine.Options.UseBackColor = true;
+            this.gridView_havaleh_vorud_file.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn32,
+            this.gridColumn33,
+            this.gridColumn34,
+            this.gridColumn35,
+            this.gridColumn36,
+            this.gridColumn37});
+            this.gridView_havaleh_vorud_file.GridControl = this.gridControl_havaleh_vorud_file;
+            this.gridView_havaleh_vorud_file.Name = "gridView_havaleh_vorud_file";
+            this.gridView_havaleh_vorud_file.OptionsView.ColumnAutoWidth = false;
+            this.gridView_havaleh_vorud_file.OptionsView.EnableAppearanceEvenRow = true;
+            this.gridView_havaleh_vorud_file.OptionsView.EnableAppearanceOddRow = true;
+            this.gridView_havaleh_vorud_file.OptionsView.ShowGroupPanel = false;
+            this.gridView_havaleh_vorud_file.PaintStyleName = "Office2003";
+            this.gridView_havaleh_vorud_file.RowHeight = 25;
+            // 
+            // gridColumn32
+            // 
+            this.gridColumn32.Caption = "سریال";
+            this.gridColumn32.FieldName = "id_havaleh_vorud_fail";
+            this.gridColumn32.MinWidth = 25;
+            this.gridColumn32.Name = "gridColumn32";
+            this.gridColumn32.OptionsColumn.AllowEdit = false;
+            this.gridColumn32.OptionsColumn.AllowFocus = false;
+            this.gridColumn32.Width = 94;
+            // 
+            // gridColumn33
+            // 
+            this.gridColumn33.Caption = "سریال حواله";
+            this.gridColumn33.FieldName = "id_havaleh_vorud";
+            this.gridColumn33.MinWidth = 25;
+            this.gridColumn33.Name = "gridColumn33";
+            this.gridColumn33.OptionsColumn.AllowEdit = false;
+            this.gridColumn33.OptionsColumn.AllowFocus = false;
+            this.gridColumn33.Width = 94;
+            // 
+            // gridColumn34
+            // 
+            this.gridColumn34.Caption = "نام فایل";
+            this.gridColumn34.FieldName = "file_name_havaleh_vorud";
+            this.gridColumn34.MinWidth = 25;
+            this.gridColumn34.Name = "gridColumn34";
+            this.gridColumn34.OptionsColumn.AllowEdit = false;
+            this.gridColumn34.OptionsColumn.AllowFocus = false;
+            this.gridColumn34.Width = 94;
+            // 
+            // gridColumn35
+            // 
+            this.gridColumn35.Caption = "پسوند";
+            this.gridColumn35.FieldName = "file_ext_havaleh_vorud";
+            this.gridColumn35.MinWidth = 25;
+            this.gridColumn35.Name = "gridColumn35";
+            this.gridColumn35.OptionsColumn.AllowEdit = false;
+            this.gridColumn35.OptionsColumn.AllowFocus = false;
+            this.gridColumn35.Width = 94;
+            // 
+            // gridColumn36
+            // 
+            this.gridColumn36.Caption = "توضیحات";
+            this.gridColumn36.FieldName = "tozihat_havaleh_vorud_file";
+            this.gridColumn36.MinWidth = 25;
+            this.gridColumn36.Name = "gridColumn36";
+            this.gridColumn36.OptionsColumn.AllowEdit = false;
+            this.gridColumn36.OptionsColumn.AllowFocus = false;
+            this.gridColumn36.Visible = true;
+            this.gridColumn36.VisibleIndex = 0;
+            this.gridColumn36.Width = 139;
+            // 
+            // gridColumn37
+            // 
+            this.gridColumn37.Caption = "عملیات";
+            this.gridColumn37.ColumnEdit = this.rp_btn_edit_file;
+            this.gridColumn37.MinWidth = 25;
+            this.gridColumn37.Name = "gridColumn37";
+            this.gridColumn37.Visible = true;
+            this.gridColumn37.VisibleIndex = 1;
+            this.gridColumn37.Width = 94;
+            // 
+            // rp_btn_edit_file
+            // 
+            this.rp_btn_edit_file.AutoHeight = false;
+            editorButtonImageOptions5.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions5.SvgImage")));
+            this.rp_btn_edit_file.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.rp_btn_edit_file.Name = "rp_btn_edit_file";
+            this.rp_btn_edit_file.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.rp_btn_edit_file.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.rp_btn_edit_file_ButtonClick);
             // 
             // UC_havaleh_vorud_details
             // 
@@ -645,6 +940,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.rp_btn_edit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_havaleh_vorud_file)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_havaleh_vorud_file)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rp_btn_edit_file)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -686,5 +988,15 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn30;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit rp_btn_edit;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn31;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private DevExpress.XtraGrid.GridControl gridControl_havaleh_vorud_file;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView_havaleh_vorud_file;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn32;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn33;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn34;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn35;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn36;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn37;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit rp_btn_edit_file;
     }
 }

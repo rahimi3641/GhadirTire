@@ -33,6 +33,10 @@ namespace GhadiTire.report
                 option.SheetName = "لیست موجودی";
                 Cs_Lib.export_gridView_to_excel(this.gridView_kala, "لیست موجودی", option);
             }
+            if (e.Button.Properties.VisibleIndex == 3)
+            {
+                Cs_Lib.export_gridView_to_pdf(this.gridView_kala, "لیست موجودی");
+            }
         }
 
         private void gridView_kala_CustomColumnDisplayText(object sender, DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs e)
@@ -50,6 +54,7 @@ namespace GhadiTire.report
         string  vorud_kala;
         string  khoruj_kala;
         string  sud;
+     
         private void select()
         {
             var sda = new SqlDataAdapter("A_select_Report_mojudi_kala", Cs_Lib.CON_GhadirTire);

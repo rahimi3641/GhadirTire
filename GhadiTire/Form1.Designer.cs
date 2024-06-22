@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.br_havaleh_vorud_details = new DevExpress.XtraBars.BarButtonItem();
             this.br_kala = new DevExpress.XtraBars.BarButtonItem();
@@ -43,6 +43,8 @@
             this.br_taraf = new DevExpress.XtraBars.BarButtonItem();
             this.br_calculator = new DevExpress.XtraBars.BarButtonItem();
             this.br_restore_backup = new DevExpress.XtraBars.BarButtonItem();
+            this.br_Report_sanad_taraf = new DevExpress.XtraBars.BarButtonItem();
+            this.br_sud_chart = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -58,9 +60,11 @@
             this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
             this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -78,9 +82,11 @@
             this.br_report_sanad,
             this.br_taraf,
             this.br_calculator,
-            this.br_restore_backup});
+            this.br_restore_backup,
+            this.br_Report_sanad_taraf,
+            this.br_sud_chart});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 12;
+            this.ribbonControl1.MaxItemId = 15;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -161,9 +167,9 @@
             this.br_calculator.Id = 10;
             this.br_calculator.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("br_calculator.ImageOptions.SvgImage")));
             this.br_calculator.Name = "br_calculator";
-            toolTipItem1.Text = "ماشین حساب";
-            superToolTip1.Items.Add(toolTipItem1);
-            this.br_calculator.SuperTip = superToolTip1;
+            toolTipItem2.Text = "ماشین حساب";
+            superToolTip2.Items.Add(toolTipItem2);
+            this.br_calculator.SuperTip = superToolTip2;
             this.br_calculator.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.br_calculator_ItemClick);
             // 
             // br_restore_backup
@@ -173,6 +179,22 @@
             this.br_restore_backup.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("br_restore_backup.ImageOptions.SvgImage")));
             this.br_restore_backup.Name = "br_restore_backup";
             this.br_restore_backup.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.br_restore_backup_ItemClick);
+            // 
+            // br_Report_sanad_taraf
+            // 
+            this.br_Report_sanad_taraf.Caption = "گردش حساب های تجاری";
+            this.br_Report_sanad_taraf.Id = 12;
+            this.br_Report_sanad_taraf.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("br_Report_sanad_taraf.ImageOptions.SvgImage")));
+            this.br_Report_sanad_taraf.Name = "br_Report_sanad_taraf";
+            this.br_Report_sanad_taraf.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.br_Report_sanad_taraf_ItemClick);
+            // 
+            // br_sud_chart
+            // 
+            this.br_sud_chart.Caption = "نمودار سود از فروش کالا";
+            this.br_sud_chart.Id = 14;
+            this.br_sud_chart.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("br_sud_chart.ImageOptions.SvgImage")));
+            this.br_sud_chart.Name = "br_sud_chart";
+            this.br_sud_chart.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.br_sud_chart_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -220,12 +242,14 @@
             // ribbonPageGroup4
             // 
             this.ribbonPageGroup4.ItemLinks.Add(this.br_Report_mojudi_kala);
+            this.ribbonPageGroup4.ItemLinks.Add(this.br_sud_chart);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.Text = "کالا";
             // 
             // ribbonPageGroup6
             // 
             this.ribbonPageGroup6.ItemLinks.Add(this.br_report_sanad);
+            this.ribbonPageGroup6.ItemLinks.Add(this.br_Report_sanad_taraf);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             this.ribbonPageGroup6.Text = "حسابداری";
             // 
@@ -267,6 +291,23 @@
             // 
             this.openFileDialog1.DefaultExt = "bak";
             // 
+            // dockManager1
+            // 
+            this.dockManager1.Form = this;
+            this.dockManager1.TopZIndexControls.AddRange(new string[] {
+            "DevExpress.XtraBars.BarDockControl",
+            "DevExpress.XtraBars.StandaloneBarDockControl",
+            "System.Windows.Forms.MenuStrip",
+            "System.Windows.Forms.StatusStrip",
+            "System.Windows.Forms.StatusBar",
+            "DevExpress.XtraBars.Ribbon.RibbonStatusBar",
+            "DevExpress.XtraBars.Ribbon.RibbonControl",
+            "DevExpress.XtraBars.Navigation.OfficeNavigationBar",
+            "DevExpress.XtraBars.Navigation.TileNavPane",
+            "DevExpress.XtraBars.TabFormControl",
+            "DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl",
+            "DevExpress.XtraBars.ToolbarForm.ToolbarFormControl"});
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -288,6 +329,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,6 +363,9 @@
         private DevExpress.XtraBars.BarButtonItem br_calculator;
         private DevExpress.XtraBars.BarButtonItem br_restore_backup;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private DevExpress.XtraBars.Docking.DockManager dockManager1;
+        private DevExpress.XtraBars.BarButtonItem br_Report_sanad_taraf;
+        private DevExpress.XtraBars.BarButtonItem br_sud_chart;
     }
 }
 

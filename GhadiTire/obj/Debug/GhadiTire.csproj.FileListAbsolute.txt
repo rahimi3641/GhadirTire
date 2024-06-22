@@ -89,9 +89,7 @@ D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadiTire.csproj.GenerateR
 D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadiTire.csproj.CoreCompileInputs.cache
 D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadiTire.csproj.CopyComplete
 D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadiTire.khoruj.Frm_Edit_havaleh_khoruj.resources
-D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadiTire.vorud.Frm_Edit_havaleh_khoruj.resources
 D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadiTire.khoruj.Frm_Edit_havaleh_khoruj_details.resources
-D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadiTire.vorud.Frm_Edit_havaleh_khoruj_details.resources
 D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadiTire.sanad.Frm_New_sanad.resources
 D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadiTire.sanad.UC_sanad.resources
 D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadiTire.report.UC_Report_sanad.resources
@@ -104,3 +102,11 @@ D:\ghadir tire\Poroject\GhadiTire\GhadiTire\bin\Debug\GhadirTire.pdb
 D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadirTire.exe.licenses
 D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadirTire.exe
 D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadirTire.pdb
+D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadiTire.sanad.Frm_New_sanad_File.resources
+D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadiTire.vorud.Frm_Edit_havaleh_vorud.resources
+D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadiTire.vorud.Frm_Edit_havaleh_vorud_details.resources
+D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadiTire.vorud.Frm_New_havaleh_vorud_File.resources
+D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadiTire.report.UC_Report_sanad_taraf.resources
+D:\ghadir tire\Poroject\GhadiTire\GhadiTire\bin\Debug\DevExpress.XtraCharts.v22.2.UI.dll
+D:\ghadir tire\Poroject\GhadiTire\GhadiTire\bin\Debug\DevExpress.XtraCharts.v22.2.UI.xml
+D:\ghadir tire\Poroject\GhadiTire\GhadiTire\obj\Debug\GhadiTire.report.UC_sud_chart.resources

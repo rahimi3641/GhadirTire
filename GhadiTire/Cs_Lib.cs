@@ -491,6 +491,17 @@ namespace GhadiTire
             p.StartInfo.FileName = path_doc + "//Export to excel//LIST_" + name_file + "_" + s + ".xlsx";
             p.Start();
         }
+        public static void export_gridView_to_pdf(DevExpress.XtraGrid.Views.Grid.GridView Grid_view, string name_file)
+        {
+            var s = replace_date_time_now();
+            //DevExpress.XtraPrinting.XlsxExportOptions o = new DevExpress.XtraPrinting.XlsxExportOptions();
+            //o.SheetName = "test";
+
+            Grid_view.ExportToPdf(path_doc + "//Export to excel//LIST_" + name_file + "_" + s + ".pdf");
+            var p = new System.Diagnostics.Process();
+            p.StartInfo.FileName = path_doc + "//Export to excel//LIST_" + name_file + "_" + s + ".pdf";
+            p.Start();
+        }
         public static void export_treelist_to_excel(DevExpress.XtraTreeList.TreeList treelist, string name_file)
         {
             var s = replace_date_time_now();

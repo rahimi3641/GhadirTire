@@ -1,6 +1,6 @@
 ﻿namespace GhadiTire.vorud
 {
-    partial class Frm_Edit_havaleh_khoruj_details
+    partial class Frm_Edit_havaleh_vorud_details
     {
         /// <summary>
         /// Required designer variable.

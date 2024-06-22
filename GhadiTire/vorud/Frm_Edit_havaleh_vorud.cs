@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace GhadiTire.vorud
 {
-    public partial class Frm_Edit_havaleh_khoruj : DevExpress.XtraEditors.XtraForm
+    public partial class Frm_Edit_havaleh_vorud : DevExpress.XtraEditors.XtraForm
     {
-        public Frm_Edit_havaleh_khoruj()
+        public Frm_Edit_havaleh_vorud()
         {
             InitializeComponent();
         }

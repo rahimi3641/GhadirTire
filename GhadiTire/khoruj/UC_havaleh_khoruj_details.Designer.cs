@@ -82,6 +82,7 @@
             this.gridColumn43 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn44 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn46 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn59 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl_havaleh_khoruj_details = new DevExpress.XtraGrid.GridControl();
             this.gridView_havaleh_khoruj_details = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -100,7 +101,7 @@
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn32 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn29 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn50 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn34 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn28 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -118,7 +119,9 @@
             this.gridColumn21 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn25 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn30 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn29 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn31 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn52 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -315,6 +318,7 @@
             this.gridColumn47,
             this.gridColumn48,
             this.gridColumn49,
+            this.gridColumn59,
             this.gridColumn51,
             this.gridColumn53,
             this.gridColumn54,
@@ -470,7 +474,7 @@
             this.gridColumn51.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "fi_havaleh_khoruj_kol", "{0:##,##}")});
             this.gridColumn51.Visible = true;
-            this.gridColumn51.VisibleIndex = 8;
+            this.gridColumn51.VisibleIndex = 9;
             this.gridColumn51.Width = 142;
             // 
             // gridColumn53
@@ -508,7 +512,7 @@
             this.gridColumn45.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "sud", "{0:##,##}")});
             this.gridColumn45.Visible = true;
-            this.gridColumn45.VisibleIndex = 9;
+            this.gridColumn45.VisibleIndex = 10;
             this.gridColumn45.Width = 94;
             // 
             // gridColumn55
@@ -518,7 +522,7 @@
             this.gridColumn55.MinWidth = 25;
             this.gridColumn55.Name = "gridColumn55";
             this.gridColumn55.Visible = true;
-            this.gridColumn55.VisibleIndex = 10;
+            this.gridColumn55.VisibleIndex = 11;
             this.gridColumn55.Width = 94;
             // 
             // repositoryItemButtonEdit1
@@ -568,7 +572,7 @@
             this.gridColumn37.MinWidth = 25;
             this.gridColumn37.Name = "gridColumn37";
             this.gridColumn37.Visible = true;
-            this.gridColumn37.VisibleIndex = 11;
+            this.gridColumn37.VisibleIndex = 12;
             this.gridColumn37.Width = 140;
             // 
             // rp_edit
@@ -620,6 +624,22 @@
             this.gridColumn46.OptionsColumn.AllowEdit = false;
             this.gridColumn46.OptionsColumn.AllowFocus = false;
             this.gridColumn46.Width = 94;
+            // 
+            // gridColumn59
+            // 
+            this.gridColumn59.Caption = "مالیات";
+            this.gridColumn59.DisplayFormat.FormatString = "##,##";
+            this.gridColumn59.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.gridColumn59.FieldName = "avg_maliat_havaleh_khoruj_kol";
+            this.gridColumn59.MinWidth = 25;
+            this.gridColumn59.Name = "gridColumn59";
+            this.gridColumn59.OptionsColumn.AllowEdit = false;
+            this.gridColumn59.OptionsColumn.AllowFocus = false;
+            this.gridColumn59.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "avg_maliat_havaleh_khoruj_kol", "{0:##,##}")});
+            this.gridColumn59.Visible = true;
+            this.gridColumn59.VisibleIndex = 8;
+            this.gridColumn59.Width = 94;
             // 
             // xtraTabPage2
             // 
@@ -775,7 +795,7 @@
             this.gridColumn5,
             this.gridColumn32,
             this.gridColumn6,
-            this.gridColumn29,
+            this.gridColumn50,
             this.gridColumn34,
             this.gridColumn28,
             this.gridColumn9,
@@ -793,7 +813,9 @@
             this.gridColumn21,
             this.gridColumn25,
             this.gridColumn30,
-            this.gridColumn31});
+            this.gridColumn29,
+            this.gridColumn31,
+            this.gridColumn52});
             this.gridView_havaleh_khoruj_details.GridControl = this.gridControl_havaleh_khoruj_details;
             this.gridView_havaleh_khoruj_details.Name = "gridView_havaleh_khoruj_details";
             this.gridView_havaleh_khoruj_details.OptionsView.ColumnAutoWidth = false;
@@ -973,20 +995,20 @@
             this.gridColumn6.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "mablagh_havaleh_khoruj_details", "SUM={0:##,##}")});
             this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 6;
+            this.gridColumn6.VisibleIndex = 7;
             this.gridColumn6.Width = 161;
             // 
-            // gridColumn29
+            // gridColumn50
             // 
-            this.gridColumn29.Caption = "قیمت خرید";
-            this.gridColumn29.DisplayFormat.FormatString = "##,##";
-            this.gridColumn29.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.gridColumn29.FieldName = "mablagh_havaleh_vorud_details";
-            this.gridColumn29.MinWidth = 25;
-            this.gridColumn29.Name = "gridColumn29";
-            this.gridColumn29.OptionsColumn.AllowEdit = false;
-            this.gridColumn29.OptionsColumn.AllowFocus = false;
-            this.gridColumn29.Width = 25;
+            this.gridColumn50.Caption = "مالیات";
+            this.gridColumn50.FieldName = "maliat_havaleh_khoruj_details_kol";
+            this.gridColumn50.MinWidth = 25;
+            this.gridColumn50.Name = "gridColumn50";
+            this.gridColumn50.OptionsColumn.AllowEdit = false;
+            this.gridColumn50.OptionsColumn.AllowFocus = false;
+            this.gridColumn50.Visible = true;
+            this.gridColumn50.VisibleIndex = 6;
+            this.gridColumn50.Width = 94;
             // 
             // gridColumn34
             // 
@@ -1001,7 +1023,7 @@
             this.gridColumn34.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "fi_khoruj_kol", "SUM={0:##,##}")});
             this.gridColumn34.Visible = true;
-            this.gridColumn34.VisibleIndex = 7;
+            this.gridColumn34.VisibleIndex = 8;
             this.gridColumn34.Width = 94;
             // 
             // gridColumn28
@@ -1035,7 +1057,7 @@
             this.gridColumn10.OptionsColumn.AllowEdit = false;
             this.gridColumn10.OptionsColumn.AllowFocus = false;
             this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 8;
+            this.gridColumn10.VisibleIndex = 9;
             this.gridColumn10.Width = 210;
             // 
             // gridColumn33
@@ -1044,7 +1066,7 @@
             this.gridColumn33.MinWidth = 25;
             this.gridColumn33.Name = "gridColumn33";
             this.gridColumn33.Visible = true;
-            this.gridColumn33.VisibleIndex = 9;
+            this.gridColumn33.VisibleIndex = 10;
             this.gridColumn33.Width = 94;
             // 
             // gridColumn11
@@ -1167,6 +1189,18 @@
             this.gridColumn30.OptionsColumn.AllowFocus = false;
             this.gridColumn30.Width = 25;
             // 
+            // gridColumn29
+            // 
+            this.gridColumn29.Caption = "قیمت خرید";
+            this.gridColumn29.DisplayFormat.FormatString = "##,##";
+            this.gridColumn29.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.gridColumn29.FieldName = "mablagh_havaleh_vorud_details";
+            this.gridColumn29.MinWidth = 25;
+            this.gridColumn29.Name = "gridColumn29";
+            this.gridColumn29.OptionsColumn.AllowEdit = false;
+            this.gridColumn29.OptionsColumn.AllowFocus = false;
+            this.gridColumn29.Width = 25;
+            // 
             // gridColumn31
             // 
             this.gridColumn31.Caption = "شماره حواله ورود";
@@ -1176,6 +1210,20 @@
             this.gridColumn31.OptionsColumn.AllowEdit = false;
             this.gridColumn31.OptionsColumn.AllowFocus = false;
             this.gridColumn31.Width = 156;
+            // 
+            // gridColumn52
+            // 
+            this.gridColumn52.Caption = "کل مبلغ";
+            this.gridColumn52.FieldName = "gridColumn52";
+            this.gridColumn52.MinWidth = 25;
+            this.gridColumn52.Name = "gridColumn52";
+            this.gridColumn52.OptionsColumn.AllowEdit = false;
+            this.gridColumn52.OptionsColumn.AllowFocus = false;
+            this.gridColumn52.UnboundDataType = typeof(long);
+            this.gridColumn52.UnboundExpression = "maliat_havaleh_khoruj_details_kol+fi_khoruj_kol";
+            this.gridColumn52.Visible = true;
+            this.gridColumn52.VisibleIndex = 11;
+            this.gridColumn52.Width = 94;
             // 
             // dockManager1
             // 
@@ -1289,5 +1337,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn44;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn45;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn46;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn50;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn52;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn59;
     }
 }

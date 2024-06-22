@@ -69,8 +69,10 @@ namespace GhadiTire.khoruj
                 txt_sho_havaleh_khoruj_end.Text = dr["sho_havaleh_khoruj"] + "";
 
             }
+            dr_darsad_maliat = ds_for_insert.Tables[3].Rows[0];
         }
         DataSet ds_havaleh_vorud_details;
+        DataRow dr_darsad_maliat;
         private void baghi_kala()
         {
             if (gridLookUpEdit_kala.EditValue + "" != "")
@@ -140,8 +142,8 @@ namespace GhadiTire.khoruj
                 XtraMessageBox.Show("مقدار خروج بیش از موجودی است", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
                 return;
             }
-            txt_mablagh_havaleh_khoruj_details_kol.Text = (int.Parse(txt_mablagh_havaleh_khoruj_details.EditValue + "") * int.Parse(txt_tedad_havaleh_khoruj_details.EditValue + "")) + "";
-
+            txt_mablagh_havaleh_khoruj_details_kol.Text = (Int64.Parse(txt_mablagh_havaleh_khoruj_details.EditValue + "") * int.Parse(txt_tedad_havaleh_khoruj_details.EditValue + ""))+ (Int64.Parse(txt_maliat_havaleh_khoruj_details.EditValue + "") * int.Parse(txt_tedad_havaleh_khoruj_details.EditValue + "")) + "";
+            
             for (int i = 0; i < ds_havaleh_vorud_details.Tables[0].Rows.Count; i++)
             {
                 DataRow dr = ds_havaleh_vorud_details.Tables[0].Rows[i];
@@ -252,7 +254,8 @@ namespace GhadiTire.khoruj
                         cmd.Parameters.AddWithValue("@id_taraf", gridLookUpEdit_taraf.EditValue);
                         cmd.Parameters.AddWithValue("@id_havaleh_vorud_details", int.Parse(dr["id_havaleh_vorud_details"] + ""));
                         cmd.Parameters.AddWithValue("@tedad_havaleh_khoruj_details", int.Parse(dr["tedad_havaleh_khoruj_details"] + ""));
-                        cmd.Parameters.AddWithValue("@mablagh_havaleh_khoruj_details", int.Parse(dr["mablagh_havaleh_khoruj_details"] + ""));
+                        cmd.Parameters.AddWithValue("@mablagh_havaleh_khoruj_details", Int64.Parse(dr["mablagh_havaleh_khoruj_details"] + ""));
+                        cmd.Parameters.AddWithValue("@maliat_havaleh_khoruj_details", txt_maliat_havaleh_khoruj_details.EditValue);
                         Cs_Lib.CON_GhadirTire.Open();
                        cmd.ExecuteNonQuery();
 
@@ -392,7 +395,8 @@ namespace GhadiTire.khoruj
         private void txt_mablagh_havaleh_khoruj_details_EditValueChanged(object sender, EventArgs e)
         {
             mohasebeh();
-
+            txt_maliat_havaleh_khoruj_details.Text = (Int64.Parse(txt_mablagh_havaleh_khoruj_details.EditValue + "") *(Int64.Parse(dr_darsad_maliat["darsad_maliat"] + "") ) /100)+ "";
+           
         }
 
         private void groupControl1_CustomButtonClick(object sender, DevExpress.XtraBars.Docking2010.BaseButtonEventArgs e)
@@ -458,6 +462,11 @@ namespace GhadiTire.khoruj
         private void labelControl19_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txt_maliat_havaleh_khoruj_details_EditValueChanged(object sender, EventArgs e)
+        {
+            mohasebeh();
         }
     }
 }

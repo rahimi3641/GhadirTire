@@ -40,8 +40,8 @@ namespace GhadiTire.sanad
 
             dt_bed_bes = new DataTable();
             dt_bed_bes.Columns.Add("id_taraf", typeof(int));
-            dt_bed_bes.Columns.Add("mablagh_bed", typeof(int));
-            dt_bed_bes.Columns.Add("mablagh_bes", typeof(int));
+            dt_bed_bes.Columns.Add("mablagh_bed", typeof(Int64));
+            dt_bed_bes.Columns.Add("mablagh_bes", typeof(Int64));
             dt_bed_bes.Columns.Add("sharh_bed_bes", typeof(string));
         }
 
@@ -72,8 +72,8 @@ namespace GhadiTire.sanad
             DataRowView drv = (DataRowView)BindingContext[dt_bed_bes].Current;
             drv.Delete();
         }
-        int sum_mablagh_bed;
-        int sum_mablagh_bes;
+        Int64 sum_mablagh_bed;
+        Int64 sum_mablagh_bes;
         private void btn_visible()
         {
             sum_mablagh_bed = 0;
@@ -86,8 +86,8 @@ namespace GhadiTire.sanad
             {
                 foreach (DataRow dr in dt_bed_bes.Rows)
                 {
-                    sum_mablagh_bed = sum_mablagh_bed + int.Parse(dr["mablagh_bed"] + "");
-                    sum_mablagh_bes = sum_mablagh_bes + int.Parse(dr["mablagh_bes"] + "");
+                    sum_mablagh_bed = sum_mablagh_bed + Int64.Parse(dr["mablagh_bed"] + "");
+                    sum_mablagh_bes = sum_mablagh_bes + Int64.Parse(dr["mablagh_bes"] + "");
                 }
                 //  MessageBox.Show(sum_mablagh_bed + "");
                 //MessageBox.Show(sum_mablagh_bes + "");
@@ -155,8 +155,8 @@ namespace GhadiTire.sanad
                     XtraMessageBox.Show(" انتخاب سرفصل حساب الزامی است ", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
                     return;
                 }
-                sum_mablagh_bed = sum_mablagh_bed + int.Parse(dr["mablagh_bed"] + "");
-                sum_mablagh_bes = sum_mablagh_bes + int.Parse(dr["mablagh_bes"] + "");
+                sum_mablagh_bed = sum_mablagh_bed + Int64.Parse(dr["mablagh_bed"] + "");
+                sum_mablagh_bes = sum_mablagh_bes + Int64.Parse(dr["mablagh_bes"] + "");
             }
             if (sum_mablagh_bes != sum_mablagh_bed)
             {
@@ -183,12 +183,14 @@ namespace GhadiTire.sanad
 
                 if (ex.Message.Contains("UNIQUE KEY"))
                 {
-                    MessageBox.Show("خروجی کالا تکراری است");
+                    MessageBox.Show("شماره سند تکراری است");
                 }
                 else
                 {
                     MessageBox.Show(ex.Message);
                 }
+                return;
+
             }
 
             foreach (DataRow dr in dt_bed_bes.Rows)
@@ -262,8 +264,8 @@ namespace GhadiTire.sanad
             sum_mablagh_bes = 0;
             foreach (DataRow dr in dt_bed_bes.Rows)
             {
-                sum_mablagh_bed = sum_mablagh_bed + int.Parse(dr["mablagh_bed"] + "");
-                sum_mablagh_bes = sum_mablagh_bes + int.Parse(dr["mablagh_bes"] + "");
+                sum_mablagh_bed = sum_mablagh_bed + Int64.Parse(dr["mablagh_bed"] + "");
+                sum_mablagh_bes = sum_mablagh_bes + Int64.Parse(dr["mablagh_bes"] + "");
             }
             if (sum_mablagh_bed == 0)
             {
